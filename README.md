@@ -2,7 +2,7 @@ ERP vs CRM
 
 Analisis Video: “Diferencias entre ERP y CRM: Así te quedará claro” https://www.youtube.com/watch?v=OeFeok-vBbk
 
-En el video se nos Aclarar de manera consisa y detallada el funcionamiento de un ERP y  CRM, y por qué cada uno cumple una funcion muy importante y crucial en el desarrollo y funcionamiento de una empresa en el video softdoit nos lo presenta como dos áreas distintas: lo interno de la empresa vs. la relación con el cliente.  ￼
+En el video se nos Aclarar de manera consisa y detallada el funcionamiento de un ERP y  CRM, y por qué cada uno cumple una funcion muy importante y crucial en el desarrollo y funcionamiento de una empresa en el video softdoit nos lo presenta como dos áreas distintas: lo interno de la empresa vs. la relación con el cliente.  
 
 En el video se nos define y diferencia 
 	•	ERP: ordena procesos internos (compras, inventario, facturas, contabilidad) para tener control y trazabilidad.
