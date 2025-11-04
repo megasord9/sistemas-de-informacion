@@ -1,0 +1,34 @@
+import json
+
+def lambda_handler(event, context):
+    """
+    Esta función Lambda es activada por un evento, por ejemplo, una carga de archivo en S3.
+    El código procesa el evento y devuelve un mensaje de éxito.
+    """
+    
+    # Aquí podemos ver el evento recibido
+    print("Evento recibido:", json.dumps(event, indent=2))
+
+    # Aquí procesamos el evento (ejemplo básico, solo se imprime el nombre del archivo subido a S3)
+    try:
+        # Verifica si el evento es un evento S3
+        if 'Records' in event:
+            for record in event['Records']:
+                # Extrae la información del archivo desde el evento
+                s3_bucket = record['s3']['bucket']['name']
+                s3_key = record['s3']['object']['key']
+                print(f"Archivo cargado: {s3_key} en el bucket {s3_bucket}")
+
+        # Devolver una respuesta exitosa
+        return {
+            'statusCode': 200,
+            'body': json.dumps('Evento procesado correctamente')
+        }
+
+    except Exception as e:
+        # En caso de error, se maneja y se responde adecuadamente
+        print(f"Error al procesar el evento: {str(e)}")
+        return {
+            'statusCode': 500,
+            'body': json.dumps(f"Error: {str(e)}")
+        }
